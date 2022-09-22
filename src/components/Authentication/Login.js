@@ -36,7 +36,6 @@ const Login = () => {
       const config = {
         headers: {
           "Content-type": "application/json",
-          "x-access-token": "",
         },
       };
 

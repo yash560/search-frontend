@@ -7,7 +7,6 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 
 const Search = () => {
-  const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState([]);
   const [data, setData] = useState([]);
 
@@ -43,7 +42,6 @@ const Search = () => {
           config
         );
 
-        setLoading(false);
         setData(data);
         history.push("/search");
         console.log(data);
@@ -65,8 +63,6 @@ const Search = () => {
             position: "bottom",
           });
         }
-
-        setLoading(false);
       }
     }
   };
