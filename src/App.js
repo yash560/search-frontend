@@ -5,7 +5,7 @@ import axios from "axios";
 import Search from "./Pages/Search";
 
 function App() {
-  axios.defaults.baseURL = "http://localhost:2000/";
+  axios.defaults.baseURL = "https://search-frontend-234.herokuapp.com/";
 
   return (
     <div className="bg-black flex">
